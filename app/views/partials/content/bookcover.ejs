@@ -1,0 +1,20 @@
+<article class="sidebar">
+  <% if (pageID == 'home' || pageID == 'bookList') { %>
+    <h1 class="sidebar-title">Movies based on books</h1>
+  <%} else { %>
+    <h1 class="sidebar-title">Cover pictures of the books and movies</h1>
+  <% } %>
+  <p class="sidebar-body">'Films can bring whole worlds to life before our eyes, make characters into living, breathing flesh and blood, but books let you LIVE everything'</p>
+  <div class="pixgrid clearfix">
+    <% if (picture.length > 0) { %>
+    <% if (pageID == 'home' || pageID == 'bookList') { %>
+      <% for (i=0; i< 8; i++) { %>
+        <img src="/images/bookcover/<%= picture[i] %>" alt="Picture <%= i %>">
+      <% } }else { %>
+        <% for (i=0; i< picture.length; i++) { %>
+          <img src="/images/bookcover/<%= picture[i] %>" alt="Picture <%= i %>">
+        <% } } %>
+    <% } %>
+
+  </div>
+</article>

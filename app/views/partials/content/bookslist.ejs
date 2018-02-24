@@ -1,0 +1,44 @@
+<article class="bookslist <% if (pageID == 'home') { %>jumbotron hidden-xs<% } %>">
+  <div class="container">
+    <div class="row">
+        <% books.forEach(function(book) { %>
+        <div class="<% if (pageID == 'home') { %>col-sm-3 text-center<% } else { %>col-sm-8 <% } %>">
+          <h3 class="bookslist-title"><a href = "/books/<%= book.shorttitle %>"><%= book.title %></a></h3>
+          <h5 class="bookslist-name">by <%= book.author %></a></h5>
+          <p class="bookslist-info">
+            <a href="/books/<%= book.shorttitle %>">
+
+              <% if (pageID == 'home') { %>
+                <img class="bookslist-img img-circle" src="/images/bookauthor/<%= book.shorttitle %>.jpg" alt="Photo of <%= book.author %>"></a>
+              <% } %>
+
+              <% if (pageID == 'bookList') { %>
+                 <img class="bookslist-img img-circle pull-left" src="/images/bookauthor/<%= book.shorttitle %>.jpg" alt="Photo of <%= book.title %>"></a>
+                 <% if (pageID !== 'home') { %>
+                   <% if (pageID == 'bookList') { %>
+                       <%= book.authorInfo %>
+                   <% } else { %>
+                     <%- book.title %>
+                   <% } %>
+                 <% } %>
+              <% } %>
+            </a>
+            <% if (pageID == 'BookInfo') { %>
+              <img class="bookslist-img img-responsive pull-left" src="/images/bookauthor/<%= book.shorttitle %>_bg.jpg" alt="Photo of <%= book.title %>"></a>
+                <h5 class="bookslist-summary">Summary of Book:</h5>
+                  <%- book.description %>
+
+                    <h5 class="bookslist-summary">Specification of the book:</h5>
+                  <ul class="list-group" style= "display: inline-block">
+                    <li class="list-group-item">Year Written: <%= book.year_written %></li>
+                    <li class="list-group-item list-group-item-success">Edition: <%= book.edition %></li>
+                    <li class="list-group-item list-group-item-info">Price: £<%= book.price %></li>
+                  </ul>
+              <% } %>
+          </a>
+          </p>
+        </div>
+        <%  }); %>
+    </div><!-- row -->
+  </div><!-- container -->
+</article>
