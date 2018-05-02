@@ -27,3 +27,14 @@ Run `> npm start` command to start the automation
 
 ## More Stuff
 Check out some of my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/ray-villalobos?trk=insiders_6787408_learning) and [lynda.com](http://lynda.com/rayvillalobos). You can follow me on [LinkedIn](https://www.linkedin.com/in/planetoftheweb/), read [my blog](http://raybo.org), [follow me on twitter](http://twitter.com/planetoftheweb), or check out my [youtube channel](http://youtube.com/planetoftheweb).
+
+
+How to use Git for Local Repository using the git bash command line tool:
+	1. First download the git and node package
+	2. Build the project (angular, node.js, django or any other)
+	3. Go to the project directory and initiate the git using: git init
+	4. Add and commit the project files to the local repository (use .gitignore to
+		insert all the files that you want to be ignored by git)
+		Commands: git add -A  and git commit -m "commit message"
+	5. See status of the git using: git status
+	6. Goto the bitbucket and create new repository and link to existing project
