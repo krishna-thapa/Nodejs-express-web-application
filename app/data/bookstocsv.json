@@ -1,124 +1,114 @@
 {
 	"books": [
 		{
-			"id": 1,
 			"title": "Northanger Abbey",
 			"shorttitle": "Northanger_Abbey",
-			"author": "Austen, Jane",
+			"author": "Jane Austen",
 			"year_written": 1814,
 			"edition": "Penguin",
 			"price": 18.2,
-			"genre": "Gothic fiction | Romance",
-			"authorInfo": "Jane Austen was an English novelist known primarily for her six major novels, which interpret, critique and comment upon the British landed gentry at the end of the 18th century.",
+			"genre": "Gothic fiction| Romance",
+			"authorInfo": "Jane Austen was an English novelist known primarily for her six major novels which interpret critique and comment upon the British landed gentry at the end of the 18th century.",
 			"description": "<p>Northanger Abbey is similar to many of Jane Austen's novels. It involves a lot of relatively wealthy families socializing with each other, usually at balls and other genteel parties. The protagonist of Northanger Abbey is a seventeen-year-old young woman, Catherine Morland, who is obsessed with Gothic novels.</p><p>When the novel begins, she is visiting Bath with a pair of family friends. While in Bath, she meets two different families, the Thorpe family and the Tilney family. </p>",
-      "picture": [
-				"Northanger_Abbey_01_tn.jpg", "Northanger_Abbey_02_tn.jpg", "Northanger_Abbey_03_tn.jpg", "Northanger_Abbey_04_tn.jpg"
-			]
-
+			"picture":
+				"Northanger_Abbey_01_tn.jpg"
 		},
 		{
-			"id": 2,
 			"title": "War and Peace",
 			"shorttitle": "War_and_Peace",
-			"author": "Tolstoy, Leo",
+			"author": "Leo Tolstoy",
 			"year_written": 1865,
 			"edition": "Penguin",
 			"price": 12.7,
-			"genre": "Historic fiction | Drama | Romance",
-			"authorInfo": "Russian author Leo Tolstoy wrote the acclaimed novels War and Peace, Anna Karenina and The Death of Ivan Ilyich, and still ranks among the world's top writers.",
+			"genre": "Historic fiction| Drama| Romance",
+			"authorInfo": "Russian author Leo Tolstoy wrote the acclaimed novels War and Peace Anna Karenina and The Death of Ivan Ilyich, and still ranks among the world's top writers.",
 			"description": "<p>Tolstoy’s purpose in writing his 1600-page War and Peace was to present a historical account of the French invasion of Russia and also to provide himself a forum for his own intellectual and spiritual insights and theories. He accomplishes this through the characters’ searches for identity as well as in the volume’s two extensive epilogues.</p><p>Tolstoy fought in the Crimean War, adding to the realism of his accounts of the Napoleonic struggle. Soon after, he experienced a religious conversion, gave up all his material wealth, and lived out his remaining days in the simple life of a peasant.</p>",
-      "picture": [
-      				"War_and_Peace_01_tn.jpg", "War_and_Peace_02_tn.jpg", "War_and_Peace_03_tn.jpg"
-      			]
+			"picture":
+      				"War_and_Peace_01_tn.jpg"
 		},
 		{
-			"id": 3,
 			"title": "Anna Karenina",
 			"shorttitle": "Anna_Karenina",
 			"author": "Tolstoy, Leo",
 			"year_written": 1875,
 			"edition": "Penguin",
 			"price": 13.5,
+			"genre": "Tragedy| Romance| Literary Fiction",
 			"authorInfo": "In 1873, Tolstoy set to work on the second of his best known novels, Anna Karenina. He continued to write fiction throughout the 1880s and 1890s.",
 			"description": "<p>Anna Karenina, the wife of a Russian imperial minister, creates a high-society scandal by an affair with Count Vronsky, a dashing cavalry officer in 19th-century St. Petersburg. Anna's husband, Alexei, offers her a difficult choice: Go into exile with Vronsky but never see her young son again, or remain with her family and abide by the rules of discretion. </p><p>Meanwhile, a farmer named Levin pines for Princess Kitty, who only has eyes for Vronsky.</p>",
-      "picture": [
-				"Anna_Karenina_01_tn.jpg", "Anna_Karenina_02_tn.jpg", "Anna_Karenina_03_tn.jpg"
-			]
+      "picture":
+				"Anna_Karenina_01_tn.jpg"
+
 
 		},
 		{
-			"id": 4,
 			"title": "Mrs. Dalloway",
 			"shorttitle": "Mrs_Dalloway",
 			"author": "Woolf, Virginia",
 			"year_written": 1925,
 			"edition": "Harcourt Brace",
 			"price": 25,
+			"genre": "Literary Fiction",
 			"authorInfo": "Adeline Virginia Woolf was an English writer, who is considered one of the foremost modernist authors of the 20th century and a pioneer in the use of stream of consciousness as a narrative device. She was born in an affluent household in Kensington, London.",
 			"description": "<p>The novel, which examines one day in the life of Clarissa Dalloway, an upper-class Londoner married to a member of Parliament, is essentially plotless; what action there is takes place mainly in the characters’ consciousness. </p><p>The novel addresses the nature of time in personal experience through two interwoven stories, that of Mrs. Dalloway, preparing for a party, and that of the mentally damaged war veteran Septimus Warren Smith.</p>",
-      "picture": [
-				"Mrs_Dalloway_01_tn.jpg", "Mrs_Dalloway_02_tn.jpg", "Mrs_Dalloway_03_tn.jpg", "Mrs_Dalloway_04_tn.jpg"
-			]
-
-		},
+      "picture":
+				"Mrs_Dalloway_01_tn.jpg"
+			},
 		{
-			"id": 5,
 			"title": "The Hours",
 			"shorttitle": "The_Hours",
 			"author": "Cunnningham, Michael",
 			"year_written": 1999,
 			"edition": "Harcourt Brace",
 			"price": 12.35,
+			"genre": "Drama| Literary Fiction",
 			"authorInfo": "Michael Cunningham (born November 6, 1952) is an American novelist and screenwriter. He is best known for his 1998 novel The Hours, which won the Pulitzer Prize for Fiction and the PEN/Faulkner Award in 1999.",
 			"description": "<p>In 1951, Laura Brown, a pregnant housewife, is planning a party for her husband, but she can't stop reading the novel 'Mrs. Dalloway'. Clarissa Vaughn, a modern woman living in present times is throwing a party for her friend Richard, a famous author dying of AIDS. </p><p>These two stories are simultaneously linked to the work and life of Virginia Woolf, who's writing the novel mentioned before.</p>",
-      "picture": [
-				"The_Hours_01_tn.jpg", "The_Hours_02_tn.jpg"
-			]
+      "picture":
+				"The_Hours_01_tn.jpg"
+
 
 		},
 		{
-			"id": 6,
 			"title": "Huckleberry Finn",
 			"shorttitle": "Huckleberry_Finn",
 			"author": "Twain, Mark",
 			"year_written": 1865,
 			"edition": "Penguin",
 			"price": 5.76,
+			"genre": "",
 			"authorInfo": "An adventurer and wily intellectual, Mark Twain wrote the classic American novels 'The Adventures of Tom Sawyer' and 'Adventures of Huckleberry Finn.' He was also a riverboat pilot, journalist, lecturer, entrepreneur and inventor.",
 			"description": "<p>Huckleberry Finn is a young boy in the 1840s, who runs away from home, and floats down the Mississippi River. He meets a run away slave named Jim and the two undertake a series of adventures based on the Picaresque novel by Mark Twain. </p><p>As the story progresses the duo exploit an array of episodic enterprises, while Huckleberry slowly changes his views of bigotry. Along the way, Huck and Jim meet the King and Duke, who ultimately send the protagonists towards a different route on their journey.</p>",
-      "picture": [
-    				"Huckleberry_Finn_01_tn.jpg", "Huckleberry_Finn_02_tn.jpg"
-    			]
-
+      "picture":
+    				"Huckleberry_Finn_01_tn.jpg"
 		},
 		{
-			"id": 7,
 			"title": "Bleak House",
 			"shorttitle": "Bleak_House",
 			"author": "Dickens, Charles",
 			"year_written": 1870,
 			"edition": "Random House",
 			"price": 5.75,
+			"genre": "Literary Fiction",
 			"authorInfo": "Charles Dickens was a prolific and highly influential 19th century British author, who penned such acclaimed works as 'Oliver Twist,' 'A Christmas Carol,' 'David Copperfield' and 'Great Expectations.'",
 			"description": "<p>leak House is the story of several generations of the Jarndyce family who wait in vain to inherit money from a disputed fortune in the settlement of the lawsuit of Jarndyce v. Jarndyce. </p><p>It is pointedly critical of England’s Court of Chancery, in which cases could drag on through decades of convoluted legal maneuvering.</p>",
-      "picture": [
-				"Bleak_House_01_tn.jpg", "Bleak_House_02_tn.jpg", "Bleak_House_03_tn.jpg"
-			]
+      "picture":
+				"Bleak_House_01_tn.jpg"
 
 		},
 		{
-			"id": 8,
 			"title": "Lord of the Rings",
 			"shorttitle": "Lord_of_the_Rings",
 			"author": "Tolkien, J.R.",
 			"year_written": 1937,
 			"edition": "Penguin",
 			"price": 27.45,
+			"genre": "Adventure Fiction",
 			"authorInfo": "J.R.R. Tolkien is an internationally renowned fantasy writer. He is best known for authoring 'The Hobbit' and 'The Lord of the Rings' trilogy.",
 			"description": "<p>The future of civilization rests in the fate of the One Ring, which has been lost for centuries. Powerful forces are unrelenting in their search for it. But fate has placed it in the hands of a young Hobbit named Frodo Baggins, who inherits the Ring and steps into legend. </p><p>A daunting task lies ahead for Frodo when he becomes the Ringbearer - to destroy the One Ring in the fires of Mount Doom where it was forged</p>",
-      "picture": [
-				"Lord_of_the_Rings_01_tn.jpg", "Lord_of_the_Rings_02_tn.jpg", "Lord_of_the_Rings_03_tn.jpg"
-			]
+      "picture":
+				"Lord_of_the_Rings_01_tn.jpg"
+
 
 		}
 	]
