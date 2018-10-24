@@ -1,12 +1,6 @@
 # Building a Website with Node.js and Express.js
 
-This is the repository for my course Building a Website with Node.js and Express.js. The full course is available on [LinkedIn Learning](https://www.linkedin.com/learning/building-a-website-with-node-js-and-express-js?trk=insiders_6787408_learning) and [Lynda.com](https://www.lynda.com/Express-js-tutorials/Building-Website-Node-js-Express-js/502310-2.html)
-
-[![Building a Website with Node.js and Express.js](https://media-exp2.licdn.com/media-proxy/ext?w=1200&h=675&f=n&hash=e1P0u0YoBCeiMKFIjsJVxCTwgbU%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6plxVUzgUv5K_PrkC9q0RIUJDPBy-kWyep-9WfZXfresbfZLSiol8TeCwAkgExfeuoQzTjFI69LcLmY4Yx3A)](https://www.linkedin.com/learning/building-a-website-with-node-js-and-express-js)
-
-Interested in building JavaScript websites that do more? Node.js and Express.js are a perfect match. Express is a fast, minimalist framework that sits on top of Node.js and allows you to build powerful single- and multi-page web applications and websites.
-
-In this course, Ray Villalobos walks through the process of creating full-featured websites with these technologies. First, find out how to install each package and leverage Node.js features from within Express. Then learn how to build a basic application with templating engines like EJS; create more flexible, modular code with includes and conditional statements; build APIs to manage HTTP requests to add and delete content dynamically; and configure more complex routing. Along the way, Ray implements features like customer feedback forms and real-time live chat, so you can see exactly what Node.js and Express are capable of.
+Interested in building JavaScript websites that do more? Node.js and Express.js are a perfect match. Express is a fast, minimalist framework that sits on top of Node.js and allows you to build powerful single- and multi-page web applications and websites. Create a full-featured websites with these technologies. First, find out how to install each package and leverage Node.js features from within Express. Then learn how to build a basic application with templating engines like EJS; create more flexible, modular code with includes and conditional statements; build APIs to manage HTTP requests to add and delete content dynamically; and configure more complex routing. Along the way, Ray implements features like customer feedback forms and real-time live chat, so you can see exactly what Node.js and Express are capable of.
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage. Or you can simply add `/tree/BRANCH_NAME` to the URL to go to the branch you want to peek at.
 
@@ -25,16 +19,13 @@ Run `> npm install -g nodemon` to install nodemod globally
 Run `> npm install` to install the project dependencies
 Run `> npm start` command to start the automation
 
-## More Stuff
-Check out some of my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/ray-villalobos?trk=insiders_6787408_learning) and [lynda.com](http://lynda.com/rayvillalobos). You can follow me on [LinkedIn](https://www.linkedin.com/in/planetoftheweb/), read [my blog](http://raybo.org), [follow me on twitter](http://twitter.com/planetoftheweb), or check out my [youtube channel](http://youtube.com/planetoftheweb).
 
-
-How to use Git for Local Repository using the git bash command line tool:
-	1. First download the git and node package
-	2. Build the project (angular, node.js, django or any other)
-	3. Go to the project directory and initiate the git using: git init
-	4. Add and commit the project files to the local repository (use .gitignore to
-		insert all the files that you want to be ignored by git)
-		Commands: git add -A  and git commit -m "commit message"
-	5. See status of the git using: git status
-	6. Goto the bitbucket and create new repository and link to existing project
+## For Local Repository using the git bash command line tool:
+1. First download the git and node package
+2. Build the project (angular, node.js, django or any other)
+3. Go to the project directory and initiate the git using: git init
+4. Add and commit the project files to the local repository (use .gitignore to
+	insert all the files that you want to be ignored by git)
+	Commands: git add -A  and git commit -m "commit message"
+5. See status of the git using: git status
+6. Goto the bitbucket and create new repository and link to existing project
