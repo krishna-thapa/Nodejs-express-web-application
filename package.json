@@ -10,9 +10,9 @@
   "license": "Demo",
   "dependencies": {
     "body-parser": "^1.15.2",
-    "ejs": "^2.5.7",
-    "express": "^4.16.2",
-    "reload": "^1.1.7",
-    "socket.io": "^1.7.4"
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "reload": "^3.0.1",
+    "socket.io": "^2.2.0"
   }
 }
