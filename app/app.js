@@ -1,5 +1,4 @@
 var express = require('express');
-var reload = require('reload');
 var app = express();
 
 var bookFile = require('./data/books.json');
@@ -32,4 +31,3 @@ io.on('connection', function(socket) {
   });
 });
 
-reload(server, app);
