@@ -1,6 +1,8 @@
 version: 2 # use CircleCI 2.0
 jobs: # a collection of steps
   build: # runs not using Workflows must have a `build` job as entry point
+    environment: 
+      IMAGE_NAME: krishna/node-web-app
     working_directory: ~/NodeJsExpress # directory where steps will run
     docker: # run the steps with Docker
       - image: circleci/node:10 # ...with this image as the primary container; this is where all `steps` will run
@@ -49,6 +51,21 @@ jobs: # a collection of steps
       - run:
           name: Push the image to DockerHub and Deploy in 8080
           command: |
-            docker build -t krishna/node-web-app .
+            docker build -t $IMAGE_NAME .
             docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
-            docker push krishna/node-web-app:latest
+            docker push $IMAGE_NAME:latest
+#runs a single build job when we push a commit to the master branch
+workflows:
+      version: 2
+      build-master:
+        jobs:
+          - build:
+              filters:
+                branches:
+                  only: master
+          - publish-latest:
+              requires:
+                - build
+              filters:
+                branches:
+                  only: master
