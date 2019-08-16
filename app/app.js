@@ -1,10 +1,10 @@
 var express = require('express');
 var app = express();
+var http = require('http');
 
 var bookFile = require('./data/books.json');
 var io = require('socket.io')();
 
-app.set('port', process.env.PORT || 3000 );
 app.set('bookData', bookFile);
 
 app.set('view engine', 'ejs');
@@ -20,9 +20,15 @@ app.use(require('./routes/feedback'));
 app.use(require('./routes/api'));
 app.use(require('./routes/chat'));
 
-var server = app.listen(app.get('port'), function() {
-  console.log('Listening on port ' + app.get('port'));
+// *** server config *** //
+var server   = http.createServer(app);
+server.listen(3000, function() {
+  console.log("Node server running on http://localhost:3000");
 });
+
+function stop() {
+  server.close();
+}
 
 io.attach(server);
 io.on('connection', function(socket) {
@@ -31,3 +37,5 @@ io.on('connection', function(socket) {
   });
 });
 
+module.exports = app
+module.exports.stop = stop;
