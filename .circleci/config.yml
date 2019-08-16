@@ -51,9 +51,11 @@ jobs: # a collection of steps
       - run:
           name: Push the image to DockerHub and Deploy in 8080
           command: |
-            IMAGE_TAG=${CIRCLE_TAG/v/''}
             docker build -t $IMAGE_NAME .
             docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
+            IMAGE_TAG=${CIRCLE_TAG/v/''}
+            docker tag $IMAGE_NAME:latest $IMAGE_NAME:$IMAGE_TAG
+            docker push $IMAGE_NAME:latest
             docker push $IMAGE_NAME:$IMAGE_TAG
 #runs a single build job when we push a commit to the master branch
 workflows:
@@ -65,4 +67,4 @@ workflows:
                 branches:
                   only: master
                 tags:
-                  only: /^v.*/
+                  only: /.*/
