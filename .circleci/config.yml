@@ -22,7 +22,7 @@ jobs: # a collection of steps
       - run: # start npm
           name: start
           command: npm start
-       - run: # run tests
+      - run: # run tests
           name: test
           command: npm test
       - run: # run coverage report
