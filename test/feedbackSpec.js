@@ -7,7 +7,7 @@ var server = require('../app/app');
 // Configure chai
 chai.use(chaiHttp);
 
-describe("Test results for Feedback", function () {
+describe("Test cases for the Node.js web-app", function () {
   // Test to get all feedback records stored in JSON
   it("should get all feedback records", function (done) {
     chai.request(server)
@@ -18,7 +18,6 @@ describe("Test results for Feedback", function () {
         res.body.should.be.a('array');
         done();
       });
-      require('../app/app').stop();
   });
 
   // Test to POST single feedback record
@@ -36,7 +35,6 @@ describe("Test results for Feedback", function () {
         res.should.be.json;
         done();
       });
-      require('../app/app').stop();
   });
 
   // Test to DELETE single feedback record
@@ -49,6 +47,9 @@ describe("Test results for Feedback", function () {
         res.should.be.json;
         done();
       });
-      require('../app/app').stop();
+  });
+
+  after(function () {
+    require('../app/app').stop();
   });
 });

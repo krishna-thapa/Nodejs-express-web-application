@@ -35,3 +35,17 @@ jobs: # a collection of steps
       - store_test_results: # for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
           path: test-results.xml
       # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples
+      - setup_remote_docker:
+          docker_layer_caching: true  #true only for premium version of circleci
+      #Below command is for installing docker in local host
+      #    - run:
+      #    name: Install Docker client
+      #    command: |
+      #      set -x
+      #      VER="18.06.3-ce"
+      #      curl -L -o /tmp/docker-$VER.tgz https://download.docker.com/linux/static/stable/x86_64/docker-$VER.tgz
+      #      tar -xz -C /tmp -f /tmp/docker-$VER.tgz
+      #      mv /tmp/docker/* /usr/bin
+      -run:
+          name: Push the image to DockerHub and Deploy in 8080
+          command: npm ci:docker
