@@ -48,4 +48,7 @@ jobs: # a collection of steps
       #      mv /tmp/docker/* /usr/bin
       - run:
           name: Push the image to DockerHub and Deploy in 8080
-          command: npm ci:docker
+          command: |
+            docker build -t krishna/node-web-app .
+            docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
+            docker push krishna/node-web-app:latest
