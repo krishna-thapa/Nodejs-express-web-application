@@ -1,20 +1,25 @@
-# Installing
+# Summary of the project
+Simple web-based application using [Node.js and express](http://expressjs.com/) for front-end and backend. It used mock json data instead of any database server.
+
+Project shows the simple CRUD implementation using the online book keeping system. Most of the front-end template uses the [.enjs](https://ejs.co/) extension and methods and routers are written with JavaScript. 
+
+## Installing
 1. Make sure you have these installed
-	- [node.js](http://nodejs.org/)
+	- [node.js and npm](http://nodejs.org/)
 	- [git](http://git-scm.com/)
-2. Clone this repository into your local machine using the terminal (mac) or Gitbash (PC) `> git clone CLONEURL`
+2. Clone this repository into your local machine using the terminal (mac) or Gitbash (PC) 
+- `> git clone CLONEURL`
 3. CD to the folder `cd FOLDERNAME`
-Run `> npm install -g nodemon` to install nodemod globally
-Run `> npm install` to install the project dependencies
-Run `> npm start` command to start the automation
+- Run `> npm install -g nodemon` to install nodemod globally
+- Run `> npm install` to install the project dependencies
+- Run `> npm start` command to start the automation
 
+## CI/CD pipeline 
+- Use of the [circleci](https://circleci.com/) to build the image and run the test 
+- Use of the [Docker hub](https://hub.docker.com/) to upload the image and run the container 
+- **WIP** Deploy the container in the cloud hosting in [heroku](https://www.heroku.com/)
 
-# For Local Repository using the git bash command line tool:
-1. First download the git and node package
-2. Build the project (angular, node.js, django or any other)
-3. Go to the project directory and initiate the git using: git init
-4. Add and commit the project files to the local repository (use .gitignore to
-	insert all the files that you want to be ignored by git)
-	Commands: git add -A  and git commit -m "commit message"
-5. See status of the git using: git status
-6. Goto the bitbucket and create new repository and link to existing project
+## Demonstration
+![alt-text](app/public/images/Web-application.gif)
+
+![alt-text](app/public/images/Feedback.jpg)
